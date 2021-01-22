@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <script>
+              var foods = ["apples", "oranges", "bananas", "grapes"];
+          
+          var myString = "My favourite fruits are";
+          for( var i=0; i<foods.length; i++){
+
+          //check if incrementor is even
+          if( i % 2 ===0) {
+              //if it's even, make the array element uppercase
+              console.log('${myString} ${foods[i].toUpperCase()} \n');
+          }
+          else{
+              //if it's odd, keep it lowercase
+              console.log('${myString} ${foods[i]} \n');
+          }
+        }  
+
+        function doStuff(){
+            var myString = "here is a message";
+            var upperString = myString.toUpperCase();
+            console.log(myString);
+            console.log(upperString);
+        }
+        doStuff();
+        function checkNum(){
+            var userNum = prompt("Enter a whole number", "");
+
+            if(userNum < 4){
+                console.log("you entered a number less than 4");
+                for ( var i=0; i<10; i++){
+                    console.log('Here is a ${i}');
+                }
+            } 
+            else if(userNum > 3){
+                    console.log("you entered a big number");
+                }
+                else{
+                    console.log("ERROR: you didn't enter a number!");
+                }
+            }
+          
+            
+
+    </script>
+</body>
+</html>

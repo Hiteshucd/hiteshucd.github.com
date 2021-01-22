@@ -1,0 +1,105 @@
+.container {
+    margin: auto;
+    width: 90vw;
+  }
+  section{
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+  }
+  header {
+    background:rgb(248, 205, 179);
+    padding: 2rem;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+  h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row-reverse;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-bottom: 0px;
+  }
+  body{
+      background-color: rgb(243, 243, 229);
+  }
+  h2{
+      font-family: 'Courier New', Courier, monospace;
+      text-transform: uppercase;
+  }
+
+  nav ul li {
+    flex: 1;
+    background: beige;
+    padding-top: 1rem;
+    border-color: black;
+    border: solid;
+    border-width: 1px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  nav ul li a {
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+  }
+ 
+  nav ul li:active {
+    background: lightgray;
+  }
+  nav ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+    
+}
+.container article{
+  flex: 1;
+}
+  
+  article {
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgb(19, 19, 19);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-bottom: 10px solid #FFBC67;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  article time{
+    text-decoration: underline;
+    font-size: 15px;
+  }
+  article p{
+    font-size: 20px;
+  }
+  footer {
+    background: rgb(248, 205, 179);
+    margin-top: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  .one{
+    background: rgb(190, 180, 180);
+    border: 1px solid black;
+  }
+  .two{
+    background: rgb(190, 180, 180);
+    border: 1px solid black;
+  }
+
+ 
