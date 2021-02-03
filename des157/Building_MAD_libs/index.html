@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Mad Lib Script</title>
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Solving the Vocabulary Test to beat the Wizard </h1>
+        <h2>Fill in the blanks to get the next clue!!!!</h2>
+    </header>
+    <main>
+<form id="myForm">
+    <p><label for="noun1">1.  Think of a noun which starts with a letter H.  </label>
+    <input type="text" id="noun1" required>
+    </p>
+
+    <p><label>2.  Think of another noun that completes the sentence.
+        I used a  <input type="text" id="noun2" required> to write in my book.
+    </label>
+    </p>
+   <p> <label>3.  Fill in the blank with an adjective
+        I can lift<input type="text" id="adj"> weights.
+    </label>
+    </p>
+    
+    <p><label>4.  Provide a Verb for the blank.
+                I  <input type="text" id="verb"> every morning before going to work.
+    </label>
+   </p>
+    
+    <input type="submit" value="Send"> 
+</form>
+<article id="madlib"></article>
+
+    </main>
+    <footer>
+        <p><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></p>
+        
+        <p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+    </footer>
+</body>
+</html>
