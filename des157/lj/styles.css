@@ -100,5 +100,18 @@
     background: rgb(190, 180, 180);
     border: 1px solid black;
   }
+  figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+  }
+  
+  figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
 
  
