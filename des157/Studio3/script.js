@@ -40,8 +40,8 @@ console.log("reading js");
         });
 
         //sound plays
-        const flute = new Audio('Media/mixkit-flute-alert-2307');
-        flute.play();
+        const fluteSound= new Audio('Media/mixkit-flute-alert-2307');
+        fluteSound.play();
     
 
         //console.log("set up the turn!");
@@ -57,8 +57,8 @@ console.log("reading js");
         rolldice.innerHTML = '<div class="buttonroll"><button id="roll">ROLL THE DICE</button></div>';
         document.getElementById('roll').addEventListener('click', function () {
             //sound plays
-            const small = new Audio('Media/mixkit-small-hit-in-a-game-2072');
-            small.play();
+            const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
+            smallSound.play();
 
 
             throwDice();
@@ -106,8 +106,8 @@ console.log("reading js");
             score.innerHTML = `<div id="win"><h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2></div>`;
 
                      //sound plays
-                     const small = new Audio('Media/mixkit-small-hit-in-a-game-2072');
-                     small.play();
+                     const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
+                     smallSound.play();
          
         
 
