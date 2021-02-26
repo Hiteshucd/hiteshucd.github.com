@@ -40,9 +40,9 @@ console.log("reading js");
         });
 
         //sound plays
-        const fluteSound= new Audio('Media/mixkit-flute-alert-2307');
+        const fluteSound = new Audio('Media/mixkit-flute-alert-2307');
         fluteSound.play();
-    
+
 
         //console.log("set up the turn!");
         console.log(gameData.index);
@@ -65,24 +65,24 @@ console.log("reading js");
         });
     };
 
-    function throwDice(){
+    function throwDice() {
         actionArea.innerHTML = '';
-        gameData.roll1 = Math.floor(Math.random()*6)+1; //using ceil would result in a zero, random() is inclusive of 0 but not 1.
-        gameData.roll2 = Math.floor(Math.random()*6)+1;
+        gameData.roll1 = Math.floor(Math.random() * 6) + 1; //using ceil would result in a zero, random() is inclusive of 0 but not 1.
+        gameData.roll2 = Math.floor(Math.random() * 6) + 1;
         game.innerHTML = `<p>Roll the dice for ${gameData.players[gameData.index]}</p>`;
         game.innerHTML += `<img src="${gameData.dice[gameData.roll1 - 1]}">
                             <img src="${gameData.dice[gameData.roll2 - 1]}">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
         //if two 1's are rolled
-        if(gameData.rollSum === 2){
+        if (gameData.rollSum === 2) {
             game.innerHTML += '<p>Oh snap! Snake eyes!</p>';
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-                        //if true (1)                if false (0)
+            //if true (1)                if false (0)
             //show current score
             setTimeout(setUpTurn, 2000);
         } //if either die is a 1 
-        else if (gameData.roll1 === 1 || gameData.roll2 === 1){
+        else if (gameData.roll1 === 1 || gameData.roll2 === 1) {
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
             setTimeout(setUpTurn, 2000);
@@ -91,10 +91,18 @@ console.log("reading js");
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
             actionArea.innerHTML = '<button id="rollagain">Roll again</button> or <button id="pass">Pass</button>';
 
-            document.getElementById('rollagain').addEventListener('click', function(){
+            document.getElementById('rollagain').addEventListener('click', function () {
+                //sound plays
+                const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
+                smallSound.play();
+
                 throwDice();
             });
-            document.getElementById('pass').addEventListener('click', function(){
+            document.getElementById('pass').addEventListener('click', function () {
+                //sound plays
+                const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
+                smallSound.play();
+
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 throwDice();
             });
@@ -105,11 +113,11 @@ console.log("reading js");
         if (gameData.score[gameData.index] > gameData.gameEnd) {
             score.innerHTML = `<div id="win"><h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2></div>`;
 
-                     //sound plays
-                     const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
-                     smallSound.play();
-         
-        
+            //sound plays
+            const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
+            smallSound.play();
+
+
 
             actionArea.innerHTML = "";
             document.getElementById('quit').innerHTML = "NEW GAME";

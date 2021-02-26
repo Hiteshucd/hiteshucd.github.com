@@ -47,7 +47,7 @@ div {
 #scorecontainer{
     padding:20px;
     max-width: 30vw;
-    max-height: 30vw;
+    max-height: 40vw;
     margin:auto;
     background-color: whitesmoke;
     border-radius: 30px;
@@ -76,11 +76,7 @@ div {
     font-family: 'Courier New', Courier, monospace;
 }
 footer{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    align-items: center;
-    padding:20px;
-    font-size:20px;
-
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
 }
-
