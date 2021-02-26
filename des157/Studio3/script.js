@@ -40,7 +40,7 @@ console.log("reading js");
         });
 
         //sound plays
-        const fluteSound = new Audio('Media/mixkit-flute-alert-2307');
+        const fluteSound = new Audio('Media/mixkit-flute-alert-2307.wav');
         fluteSound.play();
 
 
@@ -57,7 +57,7 @@ console.log("reading js");
         rolldice.innerHTML = '<div class="buttonroll"><button id="roll">ROLL THE DICE</button></div>';
         document.getElementById('roll').addEventListener('click', function () {
             //sound plays
-            const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
+            const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072.wav');
             smallSound.play();
 
 
@@ -93,14 +93,14 @@ console.log("reading js");
 
             document.getElementById('rollagain').addEventListener('click', function () {
                 //sound plays
-                const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
+                const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072.wav');
                 smallSound.play();
 
                 throwDice();
             });
             document.getElementById('pass').addEventListener('click', function () {
                 //sound plays
-                const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
+                const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072.wav');
                 smallSound.play();
 
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
@@ -114,7 +114,7 @@ console.log("reading js");
             score.innerHTML = `<div id="win"><h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2></div>`;
 
             //sound plays
-            const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072');
+            const smallSound = new Audio('Media/mixkit-small-hit-in-a-game-2072.wav');
             smallSound.play();
 
 
