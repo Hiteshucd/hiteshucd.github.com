@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game Of PIG</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+
+    <main>
+        
+    <section id="intro" class="onboarding showing">
+    <div class="screenContainer"> 
+        <header>
+            <div class="title back">Game Of PIG!</div>
+            </header>
+            <div class="instructions1">
+                <ol>
+                    <li>Try out your LUCK!</li>
+                    <li>Dont Get Snake EYES!! Just Dont</li>
+                    <li>Read the instructions on the top after starting the game</li>
+                    <li>The first player to reach a score of 30 wins!</li>
+                </ol>
+            </div>
+        <button id="startgame" class="yellow">Start Game  </button>
+    </div>
+        </section>
+
+        <section id="screenOne" class="onboarding hidden">
+            <div class="screenContainer"> 
+        <!-- Player One's card -->
+            <div id="instructions">
+        <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". I this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.
+            <br>
+            Remember:  if you roll two "ones" (snake eyes), your current score gets zeroed out. </p>
+            
+        </div>
+    
+        
+        <div id="playgame" class="hide">
+            <div id="playerOne">
+                PLAYER 1
+                <div class="P1">
+                <h3 id="scoreOne">00</h3>
+                </div>
+            </div>
+            <div >
+                <div id="game" class="white"></div>
+                <div id="actions"class="white"></div>
+                <div id="score" class="white"></div>
+            </div>
+            <div id="playerTwo">
+                
+                PLAYER 2
+                <div class="P2">
+                <h3 id="scoreTwo">00</h3>
+                </div>
+                
+            </div>
+            
+        </div>
+    
+    
+        <button id="quit">QUIT NOW!!</button>
+        
+        </div>
+    </section>
+    </main>
+
+   
+    <div id="actions"></div>
+    
+    <footer>
+        <p><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></p>
+        <p><a href="sources.html">Sources</a></p>
+    <p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+
+    </footer>
+</body>
+</html>
