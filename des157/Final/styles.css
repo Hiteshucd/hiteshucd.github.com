@@ -1,0 +1,411 @@
+
+  
+body {
+    
+    color: white;
+    padding: 50px;
+    line-height: 1.5em;
+        background-image: url("images/BG.png");
+        background-attachment: fixed;
+        background-size: 300px;
+}
+
+h1, h2 {
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    
+}
+
+h3 {
+    font-size: 90px;
+}
+
+ul, li {
+    padding-top: 10px;
+    color: white;
+}
+
+button { 
+    padding: 10px;
+    cursor: pointer;
+}
+
+div {
+    padding: 20px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .showing {
+    visibility: showing;
+    opacity: 1;
+  }
+
+
+.title {
+
+    /* background-clip: text; */
+    font-family: 'Courier New', Courier, monospace;
+    /* background-clip: text;
+    -webkit-background-clip: text; */
+    color: white;
+    font-size: 100px;
+    animation: AnimationText 3s ease infinite;
+    background-size: 200% 400%,200% 200%;
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+  
+  /* Overlay Styling */
+  
+
+.screenContainer {
+    top: 0;
+    left: auto;
+    right: auto;  
+    height: 880px;
+    color: #342400;
+    max-width: 1366px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .onboarding {
+    position: absolute;
+    
+    top: 2000;
+    right: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    /* Properties that allow for a smooth transition for the overlay */
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
+
+  #screenOne {
+   
+    margin: auto;
+    align-content: center;
+    text-align: center;
+  }
+
+:root{
+    --main-green: rgba(72, 194, 90, 0.844);
+    --main-red: rgba(227, 102, 110, 0.879);
+ 
+ 
+   
+    --main-yellow: rgb(0, 0, 0);
+    --main-white: rgb(251, 254, 255);
+}
+
+
+
+
+
+
+header a{
+    background-color: var(--main-red);
+    padding: 1rem;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.instructions1{
+    
+    margin: auto;
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    background-color: black;
+    list-style: none;
+    list-style-position: inside;
+}
+
+/* Main */
+
+
+#playgame{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: opacity 1s;
+}
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.19);
+    padding: 2rem;
+    min-width: 300px;
+}
+
+.card h1{
+    font-size: 6em;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.card h2, .middle h2{
+    font-size: 2em;
+    margin: 0;
+}
+
+
+
+a{
+   
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+ 
+    
+    display: inline-block;
+    cursor: pointer;
+}
+
+a:hover{
+    opacity: 0.5;
+    transition: 0.25s ease;
+}
+
+#startgame{
+    padding: 2rem;
+    color: white;
+    margin-top: 3rem;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.middle p{
+    font-size: 1.5em;
+}
+
+.yellow{
+    background-color: var(--main-yellow);
+}
+
+.red{
+    background-color: var(--main-red);
+}
+
+.white {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+/* Hide sections of the design */
+
+
+
+/* Footer */
+
+footer{
+    background-color: black;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 92%;
+}
+
+footer a{
+    padding: 0 3rem;
+    color: var(--dark-spot);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+  
+  /************************* Buttons ***********************/
+  
+  button {
+    padding: 10px;
+  }
+  
+  /* Dice images  */
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  /* CLasses for JS use */
+  
+  .animate {
+    transform: rotate(45deg) rotateY(7200deg);
+    transition: 4s all ease;
+    z-index: 1;
+  }
+  
+  #roll {
+    height: 60px;
+    width: 200px;
+    border-radius: 15px;
+    color: rgb(252, 252, 252);
+    background-color: #7b69df;
+    color: white;
+  }
+  
+  #rollagain {
+    margin-right: 10px;
+    height: 60px;
+    width: 200px;
+    border-radius: 15px;
+    color: rgb(245, 241, 241);
+    background-color: #7b69df;
+    color: white;
+  }
+  
+  #pass {
+    margin-left: 10px;
+    height: 60px;
+    width: 200px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: #7b69df;
+   
+  }
+  
+ #quit {
+    font-family: monospace;
+    margin-left: 40px;
+   align-content: center;
+    cursor: pointer;
+    padding: 15px;
+   text-align: center;
+    border-radius: 15px;
+    color: rgb(247, 242, 217);
+    background-color: rgb(17, 16, 16);
+  }
+  
+  #instructions {
+    
+    background-color: #eaeaea;
+    color: black;
+    border-radius: 10px;
+    width: 80%;
+    left: auto;
+    margin: auto;
+    right: inherit;
+    padding-right: 45px;
+    padding-left: 45px;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 20px;
+  }
+  
+
+ 
+  /************* Scoreboard ************/
+  
+  
+  
+
+
+  
+  #playerOne {
+    padding-top: 10px;
+    grid-column: 1;
+    font-size: 20px;
+    color: #eaeaea;
+    background-color: black;
+  }
+  
+
+  #playerTwo {
+    padding-top: 10px;
+    font-size: 20px;
+    grid-column: 3;
+    color: #eaeaea;
+    background-color:  #7b69df;
+  }
+  
+  .P1{
+    background-color: #7b69df;
+    border-radius: 30px;
+    padding: 50px;
+    
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+
+  }
+
+  .P2 {
+    background-color: #000000;
+    border-radius: 30px;
+    padding: 50px;
+    
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+
+  #score {
+    text-align: center;
+
+     grid-column: 6;
+  }
+  #actions{
+  grid-column: 4;
+}
+
+ 
+
+  #actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+  }
+  
+  /* Keyframes */
+  @-webkit-keyframes AnimationText {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+@-moz-keyframes  AnimationText{
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+@keyframes  AnimationText{
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
